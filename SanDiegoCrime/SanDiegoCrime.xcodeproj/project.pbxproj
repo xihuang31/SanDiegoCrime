@@ -1,0 +1,1197 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F8ACE171E072AD400FD0DAC /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8ACE0A1E072ACA00FD0DAC /* SQLite.framework */; };
+		4F8F85451DF516CC00954E89 /* CalloutRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F85441DF516CC00954E89 /* CalloutRecord.swift */; };
+		4F8F854D1DF5174100954E89 /* RateRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F854C1DF5174100954E89 /* RateRecord.swift */; };
+		4FA82AE91DF4BA3400B9AABF /* DataBaseAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA82AE81DF4BA3400B9AABF /* DataBaseAccess.swift */; };
+		4FCA01781DE6942400D3D751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA01771DE6942400D3D751 /* AppDelegate.swift */; };
+		4FCA017A1DE6942400D3D751 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA01791DE6942400D3D751 /* ViewController.swift */; };
+		4FCA017D1DE6942400D3D751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA017B1DE6942400D3D751 /* Main.storyboard */; };
+		4FCA01821DE6942400D3D751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA01801DE6942400D3D751 /* LaunchScreen.storyboard */; };
+		4FCA018D1DE6942400D3D751 /* SanDiegoCrimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA018C1DE6942400D3D751 /* SanDiegoCrimeTests.swift */; };
+		4FCA01981DE6942400D3D751 /* SanDiegoCrimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA01971DE6942400D3D751 /* SanDiegoCrimeUITests.swift */; };
+		4FCA01A71DE6947500D3D751 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCA01A61DE6947500D3D751 /* MapKit.framework */; };
+		4FCA01AA1DE6958400D3D751 /* CustomCalloutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA01A91DE6958400D3D751 /* CustomCalloutView.xib */; };
+		4FCA01AC1DE6967B00D3D751 /* CustomCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA01AB1DE6967B00D3D751 /* CustomCalloutView.swift */; };
+		4FCA01B01DE6A01100D3D751 /* CommunityAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA01AF1DE6A01100D3D751 /* CommunityAnnotation.swift */; };
+		4FE7C3EA1E0486D00078F00B /* CrimeData.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4FE7C3E91E0486D00078F00B /* CrimeData.sqlite */; };
+		4FE9CFEA1E01D03900AD0B1E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE9CFE91E01D03900AD0B1E /* TestViewController.swift */; };
+		4FEB89821E01FEA000FEBA0F /* JBChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FEB89791E01FE9F00FEBA0F /* JBChart.framework */; };
+		4FEB89891E01FEA000FEBA0F /* JBChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB89881E01FEA000FEBA0F /* JBChartTests.m */; };
+		4FEB898B1E01FEA000FEBA0F /* JBChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEB897B1E01FE9F00FEBA0F /* JBChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FEB898E1E01FEA000FEBA0F /* JBChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FEB89791E01FE9F00FEBA0F /* JBChart.framework */; };
+		4FEB898F1E01FEA000FEBA0F /* JBChart.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FEB89791E01FE9F00FEBA0F /* JBChart.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4FEB89BD1E01FEE600FEBA0F /* NSMutableArray+JBStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEB899E1E01FEE600FEBA0F /* NSMutableArray+JBStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FEB89BE1E01FEE600FEBA0F /* NSMutableArray+JBStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB899F1E01FEE600FEBA0F /* NSMutableArray+JBStack.m */; };
+		4FEB89BF1E01FEE600FEBA0F /* JBBarChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEB89A11E01FEE600FEBA0F /* JBBarChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FEB89C01E01FEE600FEBA0F /* JBBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB89A21E01FEE600FEBA0F /* JBBarChartView.m */; };
+		4FEB89C11E01FEE600FEBA0F /* JBGradientBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEB89A41E01FEE600FEBA0F /* JBGradientBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FEB89C21E01FEE600FEBA0F /* JBGradientBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB89A51E01FEE600FEBA0F /* JBGradientBarView.m */; };
+		4FEB89C31E01FEE600FEBA0F /* JBChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEB89A71E01FEE600FEBA0F /* JBChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FEB89C41E01FEE600FEBA0F /* JBChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB89A81E01FEE600FEBA0F /* JBChartView.m */; };
+		4FEB89C51E01FEE600FEBA0F /* JBLineChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEB89AA1E01FEE600FEBA0F /* JBLineChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FEB89C61E01FEE600FEBA0F /* JBLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB89AB1E01FEE600FEBA0F /* JBLineChartView.m */; };
+		4FEB89C71E01FEE600FEBA0F /* JBGradientLineLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEB89AD1E01FEE600FEBA0F /* JBGradientLineLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FEB89C81E01FEE600FEBA0F /* JBGradientLineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB89AE1E01FEE600FEBA0F /* JBGradientLineLayer.m */; };
+		4FEB89C91E01FEE600FEBA0F /* JBShapeLineLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEB89AF1E01FEE600FEBA0F /* JBShapeLineLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FEB89CA1E01FEE600FEBA0F /* JBShapeLineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB89B01E01FEE600FEBA0F /* JBShapeLineLayer.m */; };
+		4FEB89CB1E01FEE600FEBA0F /* JBLineChartLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEB89B21E01FEE600FEBA0F /* JBLineChartLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FEB89CC1E01FEE600FEBA0F /* JBLineChartLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB89B31E01FEE600FEBA0F /* JBLineChartLine.m */; };
+		4FEB89CD1E01FEE600FEBA0F /* JBLineChartPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEB89B41E01FEE600FEBA0F /* JBLineChartPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FEB89CE1E01FEE600FEBA0F /* JBLineChartPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB89B51E01FEE600FEBA0F /* JBLineChartPoint.m */; };
+		4FEB89CF1E01FEE600FEBA0F /* JBLineChartDotsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEB89B71E01FEE600FEBA0F /* JBLineChartDotsView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FEB89D01E01FEE600FEBA0F /* JBLineChartDotsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB89B81E01FEE600FEBA0F /* JBLineChartDotsView.m */; };
+		4FEB89D11E01FEE600FEBA0F /* JBLineChartDotView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEB89B91E01FEE600FEBA0F /* JBLineChartDotView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FEB89D21E01FEE600FEBA0F /* JBLineChartDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB89BA1E01FEE600FEBA0F /* JBLineChartDotView.m */; };
+		4FEB89D31E01FEE600FEBA0F /* JBLineChartLinesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEB89BB1E01FEE600FEBA0F /* JBLineChartLinesView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FEB89D41E01FEE600FEBA0F /* JBLineChartLinesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB89BC1E01FEE600FEBA0F /* JBLineChartLinesView.m */; };
+		4FEB89D61E02009600FEBA0F /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB89D51E02009600FEBA0F /* BarViewController.swift */; };
+		4FEB89D81E02009D00FEBA0F /* LineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB89D71E02009D00FEBA0F /* LineViewController.swift */; };
+		4FFC1E7B1DFF4A13007B257A /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FFC1E7A1DFF4A13007B257A /* image.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F8ACE091E072ACA00FD0DAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F8ACDFF1E072ACA00FD0DAC /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		4F8ACE0B1E072ACA00FD0DAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F8ACDFF1E072ACA00FD0DAC /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		4F8ACE0D1E072ACA00FD0DAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F8ACDFF1E072ACA00FD0DAC /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		4F8ACE0F1E072ACA00FD0DAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F8ACDFF1E072ACA00FD0DAC /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		4F8ACE111E072ACA00FD0DAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F8ACDFF1E072ACA00FD0DAC /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		4F8ACE131E072ACA00FD0DAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F8ACDFF1E072ACA00FD0DAC /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		4F8ACE151E072ACA00FD0DAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F8ACDFF1E072ACA00FD0DAC /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		4FCA01891DE6942400D3D751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FCA016C1DE6942400D3D751 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FCA01731DE6942400D3D751;
+			remoteInfo = SanDiegoCrime;
+		};
+		4FCA01941DE6942400D3D751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FCA016C1DE6942400D3D751 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FCA01731DE6942400D3D751;
+			remoteInfo = SanDiegoCrime;
+		};
+		4FEB89831E01FEA000FEBA0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FCA016C1DE6942400D3D751 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FEB89781E01FE9F00FEBA0F;
+			remoteInfo = JBChart;
+		};
+		4FEB89851E01FEA000FEBA0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FCA016C1DE6942400D3D751 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FCA01731DE6942400D3D751;
+			remoteInfo = SanDiegoCrime;
+		};
+		4FEB898C1E01FEA000FEBA0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FCA016C1DE6942400D3D751 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FEB89781E01FE9F00FEBA0F;
+			remoteInfo = JBChart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4FA82AE61DF4B9EC00B9AABF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4FEB898F1E01FEA000FEBA0F /* JBChart.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4F8ACDFF1E072ACA00FD0DAC /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SQLite.xcodeproj; sourceTree = "<group>"; };
+		4F8F85441DF516CC00954E89 /* CalloutRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalloutRecord.swift; sourceTree = "<group>"; };
+		4F8F854C1DF5174100954E89 /* RateRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateRecord.swift; sourceTree = "<group>"; };
+		4FA82AE81DF4BA3400B9AABF /* DataBaseAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseAccess.swift; sourceTree = "<group>"; };
+		4FCA01741DE6942400D3D751 /* SanDiegoCrime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanDiegoCrime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FCA01771DE6942400D3D751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4FCA01791DE6942400D3D751 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FCA017C1DE6942400D3D751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FCA01811DE6942400D3D751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4FCA01831DE6942400D3D751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FCA01881DE6942400D3D751 /* SanDiegoCrimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanDiegoCrimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FCA018C1DE6942400D3D751 /* SanDiegoCrimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanDiegoCrimeTests.swift; sourceTree = "<group>"; };
+		4FCA018E1DE6942400D3D751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FCA01931DE6942400D3D751 /* SanDiegoCrimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanDiegoCrimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FCA01971DE6942400D3D751 /* SanDiegoCrimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanDiegoCrimeUITests.swift; sourceTree = "<group>"; };
+		4FCA01991DE6942400D3D751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FCA01A61DE6947500D3D751 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4FCA01A91DE6958400D3D751 /* CustomCalloutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCalloutView.xib; sourceTree = "<group>"; };
+		4FCA01AB1DE6967B00D3D751 /* CustomCalloutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCalloutView.swift; sourceTree = "<group>"; };
+		4FCA01AF1DE6A01100D3D751 /* CommunityAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityAnnotation.swift; sourceTree = "<group>"; };
+		4FE7C3E91E0486D00078F00B /* CrimeData.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = CrimeData.sqlite; sourceTree = "<group>"; };
+		4FE9CFE91E01D03900AD0B1E /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestViewController.swift; path = ../TestViewController.swift; sourceTree = "<group>"; };
+		4FEB89791E01FE9F00FEBA0F /* JBChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JBChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FEB897B1E01FE9F00FEBA0F /* JBChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBChart.h; sourceTree = "<group>"; };
+		4FEB897C1E01FE9F00FEBA0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FEB89811E01FE9F00FEBA0F /* JBChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JBChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FEB89881E01FEA000FEBA0F /* JBChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBChartTests.m; sourceTree = "<group>"; };
+		4FEB898A1E01FEA000FEBA0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FEB899E1E01FEE600FEBA0F /* NSMutableArray+JBStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+JBStack.h"; sourceTree = "<group>"; };
+		4FEB899F1E01FEE600FEBA0F /* NSMutableArray+JBStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+JBStack.m"; sourceTree = "<group>"; };
+		4FEB89A11E01FEE600FEBA0F /* JBBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartView.h; sourceTree = "<group>"; };
+		4FEB89A21E01FEE600FEBA0F /* JBBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBBarChartView.m; sourceTree = "<group>"; };
+		4FEB89A41E01FEE600FEBA0F /* JBGradientBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBGradientBarView.h; sourceTree = "<group>"; };
+		4FEB89A51E01FEE600FEBA0F /* JBGradientBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBGradientBarView.m; sourceTree = "<group>"; };
+		4FEB89A71E01FEE600FEBA0F /* JBChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBChartView.h; sourceTree = "<group>"; };
+		4FEB89A81E01FEE600FEBA0F /* JBChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBChartView.m; sourceTree = "<group>"; };
+		4FEB89AA1E01FEE600FEBA0F /* JBLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartView.h; sourceTree = "<group>"; };
+		4FEB89AB1E01FEE600FEBA0F /* JBLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartView.m; sourceTree = "<group>"; };
+		4FEB89AD1E01FEE600FEBA0F /* JBGradientLineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBGradientLineLayer.h; sourceTree = "<group>"; };
+		4FEB89AE1E01FEE600FEBA0F /* JBGradientLineLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBGradientLineLayer.m; sourceTree = "<group>"; };
+		4FEB89AF1E01FEE600FEBA0F /* JBShapeLineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBShapeLineLayer.h; sourceTree = "<group>"; };
+		4FEB89B01E01FEE600FEBA0F /* JBShapeLineLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBShapeLineLayer.m; sourceTree = "<group>"; };
+		4FEB89B21E01FEE600FEBA0F /* JBLineChartLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartLine.h; sourceTree = "<group>"; };
+		4FEB89B31E01FEE600FEBA0F /* JBLineChartLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartLine.m; sourceTree = "<group>"; };
+		4FEB89B41E01FEE600FEBA0F /* JBLineChartPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartPoint.h; sourceTree = "<group>"; };
+		4FEB89B51E01FEE600FEBA0F /* JBLineChartPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartPoint.m; sourceTree = "<group>"; };
+		4FEB89B71E01FEE600FEBA0F /* JBLineChartDotsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartDotsView.h; sourceTree = "<group>"; };
+		4FEB89B81E01FEE600FEBA0F /* JBLineChartDotsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartDotsView.m; sourceTree = "<group>"; };
+		4FEB89B91E01FEE600FEBA0F /* JBLineChartDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartDotView.h; sourceTree = "<group>"; };
+		4FEB89BA1E01FEE600FEBA0F /* JBLineChartDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartDotView.m; sourceTree = "<group>"; };
+		4FEB89BB1E01FEE600FEBA0F /* JBLineChartLinesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartLinesView.h; sourceTree = "<group>"; };
+		4FEB89BC1E01FEE600FEBA0F /* JBLineChartLinesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartLinesView.m; sourceTree = "<group>"; };
+		4FEB89D51E02009600FEBA0F /* BarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
+		4FEB89D71E02009D00FEBA0F /* LineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
+		4FFC1E7A1DFF4A13007B257A /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FCA01711DE6942400D3D751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8ACE171E072AD400FD0DAC /* SQLite.framework in Frameworks */,
+				4FCA01A71DE6947500D3D751 /* MapKit.framework in Frameworks */,
+				4FEB898E1E01FEA000FEBA0F /* JBChart.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FCA01851DE6942400D3D751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FCA01901DE6942400D3D751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FEB89751E01FE9F00FEBA0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FEB897E1E01FE9F00FEBA0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FEB89821E01FEA000FEBA0F /* JBChart.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F8ACE001E072ACA00FD0DAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F8ACE0A1E072ACA00FD0DAC /* SQLite.framework */,
+				4F8ACE0C1E072ACA00FD0DAC /* SQLiteTests iOS.xctest */,
+				4F8ACE0E1E072ACA00FD0DAC /* SQLite.framework */,
+				4F8ACE101E072ACA00FD0DAC /* SQLiteTests Mac.xctest */,
+				4F8ACE121E072ACA00FD0DAC /* SQLite.framework */,
+				4F8ACE141E072ACA00FD0DAC /* SQLiteTests tvOS.xctest */,
+				4F8ACE161E072ACA00FD0DAC /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FA82AE71DF4BA2700B9AABF /* CrimeData */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7C3E91E0486D00078F00B /* CrimeData.sqlite */,
+				4FA82AE81DF4BA3400B9AABF /* DataBaseAccess.swift */,
+				4F8F85441DF516CC00954E89 /* CalloutRecord.swift */,
+				4F8F854C1DF5174100954E89 /* RateRecord.swift */,
+			);
+			name = CrimeData;
+			sourceTree = "<group>";
+		};
+		4FCA016B1DE6942400D3D751 = {
+			isa = PBXGroup;
+			children = (
+				4FCA01761DE6942400D3D751 /* SanDiegoCrime */,
+				4FCA018B1DE6942400D3D751 /* SanDiegoCrimeTests */,
+				4FCA01961DE6942400D3D751 /* SanDiegoCrimeUITests */,
+				4FEB897A1E01FE9F00FEBA0F /* JBChart */,
+				4FEB89871E01FEA000FEBA0F /* JBChartTests */,
+				4FCA01751DE6942400D3D751 /* Products */,
+				4FCA01A51DE6947500D3D751 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4FCA01751DE6942400D3D751 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA01741DE6942400D3D751 /* SanDiegoCrime.app */,
+				4FCA01881DE6942400D3D751 /* SanDiegoCrimeTests.xctest */,
+				4FCA01931DE6942400D3D751 /* SanDiegoCrimeUITests.xctest */,
+				4FEB89791E01FE9F00FEBA0F /* JBChart.framework */,
+				4FEB89811E01FE9F00FEBA0F /* JBChartTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FCA01761DE6942400D3D751 /* SanDiegoCrime */ = {
+			isa = PBXGroup;
+			children = (
+				4FE9CFE91E01D03900AD0B1E /* TestViewController.swift */,
+				4FA82AE71DF4BA2700B9AABF /* CrimeData */,
+				4FCA01A81DE694BC00D3D751 /* CustomCallout */,
+				4FCA01771DE6942400D3D751 /* AppDelegate.swift */,
+				4FEB89D71E02009D00FEBA0F /* LineViewController.swift */,
+				4FEB89D51E02009600FEBA0F /* BarViewController.swift */,
+				4FCA01791DE6942400D3D751 /* ViewController.swift */,
+				4FCA017B1DE6942400D3D751 /* Main.storyboard */,
+				4FFC1E7A1DFF4A13007B257A /* image.xcassets */,
+				4FCA01801DE6942400D3D751 /* LaunchScreen.storyboard */,
+				4FCA01831DE6942400D3D751 /* Info.plist */,
+				4FCA01AF1DE6A01100D3D751 /* CommunityAnnotation.swift */,
+			);
+			path = SanDiegoCrime;
+			sourceTree = "<group>";
+		};
+		4FCA018B1DE6942400D3D751 /* SanDiegoCrimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA018C1DE6942400D3D751 /* SanDiegoCrimeTests.swift */,
+				4FCA018E1DE6942400D3D751 /* Info.plist */,
+			);
+			path = SanDiegoCrimeTests;
+			sourceTree = "<group>";
+		};
+		4FCA01961DE6942400D3D751 /* SanDiegoCrimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA01971DE6942400D3D751 /* SanDiegoCrimeUITests.swift */,
+				4FCA01991DE6942400D3D751 /* Info.plist */,
+			);
+			path = SanDiegoCrimeUITests;
+			sourceTree = "<group>";
+		};
+		4FCA01A51DE6947500D3D751 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F8ACDFF1E072ACA00FD0DAC /* SQLite.xcodeproj */,
+				4FCA01A61DE6947500D3D751 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FCA01A81DE694BC00D3D751 /* CustomCallout */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA01A91DE6958400D3D751 /* CustomCalloutView.xib */,
+				4FCA01AB1DE6967B00D3D751 /* CustomCalloutView.swift */,
+			);
+			name = CustomCallout;
+			sourceTree = "<group>";
+		};
+		4FEB897A1E01FE9F00FEBA0F /* JBChart */ = {
+			isa = PBXGroup;
+			children = (
+				4FEB897B1E01FE9F00FEBA0F /* JBChart.h */,
+				4FEB899C1E01FEAA00FEBA0F /* Classes */,
+				4FEB897C1E01FE9F00FEBA0F /* Info.plist */,
+			);
+			path = JBChart;
+			sourceTree = "<group>";
+		};
+		4FEB89871E01FEA000FEBA0F /* JBChartTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FEB89881E01FEA000FEBA0F /* JBChartTests.m */,
+				4FEB898A1E01FEA000FEBA0F /* Info.plist */,
+			);
+			path = JBChartTests;
+			sourceTree = "<group>";
+		};
+		4FEB899C1E01FEAA00FEBA0F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4FEB899D1E01FEE600FEBA0F /* Additions */,
+				4FEB89A01E01FEE600FEBA0F /* Bar */,
+				4FEB89A61E01FEE600FEBA0F /* Base */,
+				4FEB89A91E01FEE600FEBA0F /* Line */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		4FEB899D1E01FEE600FEBA0F /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				4FEB899E1E01FEE600FEBA0F /* NSMutableArray+JBStack.h */,
+				4FEB899F1E01FEE600FEBA0F /* NSMutableArray+JBStack.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		4FEB89A01E01FEE600FEBA0F /* Bar */ = {
+			isa = PBXGroup;
+			children = (
+				4FEB89A11E01FEE600FEBA0F /* JBBarChartView.h */,
+				4FEB89A21E01FEE600FEBA0F /* JBBarChartView.m */,
+				4FEB89A31E01FEE600FEBA0F /* Views */,
+			);
+			path = Bar;
+			sourceTree = "<group>";
+		};
+		4FEB89A31E01FEE600FEBA0F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4FEB89A41E01FEE600FEBA0F /* JBGradientBarView.h */,
+				4FEB89A51E01FEE600FEBA0F /* JBGradientBarView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4FEB89A61E01FEE600FEBA0F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4FEB89A71E01FEE600FEBA0F /* JBChartView.h */,
+				4FEB89A81E01FEE600FEBA0F /* JBChartView.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4FEB89A91E01FEE600FEBA0F /* Line */ = {
+			isa = PBXGroup;
+			children = (
+				4FEB89AA1E01FEE600FEBA0F /* JBLineChartView.h */,
+				4FEB89AB1E01FEE600FEBA0F /* JBLineChartView.m */,
+				4FEB89AC1E01FEE600FEBA0F /* Layers */,
+				4FEB89B11E01FEE600FEBA0F /* Models */,
+				4FEB89B61E01FEE600FEBA0F /* Views */,
+			);
+			path = Line;
+			sourceTree = "<group>";
+		};
+		4FEB89AC1E01FEE600FEBA0F /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				4FEB89AD1E01FEE600FEBA0F /* JBGradientLineLayer.h */,
+				4FEB89AE1E01FEE600FEBA0F /* JBGradientLineLayer.m */,
+				4FEB89AF1E01FEE600FEBA0F /* JBShapeLineLayer.h */,
+				4FEB89B01E01FEE600FEBA0F /* JBShapeLineLayer.m */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		4FEB89B11E01FEE600FEBA0F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4FEB89B21E01FEE600FEBA0F /* JBLineChartLine.h */,
+				4FEB89B31E01FEE600FEBA0F /* JBLineChartLine.m */,
+				4FEB89B41E01FEE600FEBA0F /* JBLineChartPoint.h */,
+				4FEB89B51E01FEE600FEBA0F /* JBLineChartPoint.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4FEB89B61E01FEE600FEBA0F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4FEB89B71E01FEE600FEBA0F /* JBLineChartDotsView.h */,
+				4FEB89B81E01FEE600FEBA0F /* JBLineChartDotsView.m */,
+				4FEB89B91E01FEE600FEBA0F /* JBLineChartDotView.h */,
+				4FEB89BA1E01FEE600FEBA0F /* JBLineChartDotView.m */,
+				4FEB89BB1E01FEE600FEBA0F /* JBLineChartLinesView.h */,
+				4FEB89BC1E01FEE600FEBA0F /* JBLineChartLinesView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4FEB89761E01FE9F00FEBA0F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FEB89CD1E01FEE600FEBA0F /* JBLineChartPoint.h in Headers */,
+				4FEB89D31E01FEE600FEBA0F /* JBLineChartLinesView.h in Headers */,
+				4FEB898B1E01FEA000FEBA0F /* JBChart.h in Headers */,
+				4FEB89D11E01FEE600FEBA0F /* JBLineChartDotView.h in Headers */,
+				4FEB89C71E01FEE600FEBA0F /* JBGradientLineLayer.h in Headers */,
+				4FEB89C91E01FEE600FEBA0F /* JBShapeLineLayer.h in Headers */,
+				4FEB89BD1E01FEE600FEBA0F /* NSMutableArray+JBStack.h in Headers */,
+				4FEB89CF1E01FEE600FEBA0F /* JBLineChartDotsView.h in Headers */,
+				4FEB89BF1E01FEE600FEBA0F /* JBBarChartView.h in Headers */,
+				4FEB89C31E01FEE600FEBA0F /* JBChartView.h in Headers */,
+				4FEB89C51E01FEE600FEBA0F /* JBLineChartView.h in Headers */,
+				4FEB89CB1E01FEE600FEBA0F /* JBLineChartLine.h in Headers */,
+				4FEB89C11E01FEE600FEBA0F /* JBGradientBarView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4FCA01731DE6942400D3D751 /* SanDiegoCrime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FCA019C1DE6942400D3D751 /* Build configuration list for PBXNativeTarget "SanDiegoCrime" */;
+			buildPhases = (
+				4FCA01701DE6942400D3D751 /* Sources */,
+				4FCA01711DE6942400D3D751 /* Frameworks */,
+				4FCA01721DE6942400D3D751 /* Resources */,
+				4FA82AE61DF4B9EC00B9AABF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FEB898D1E01FEA000FEBA0F /* PBXTargetDependency */,
+			);
+			name = SanDiegoCrime;
+			productName = SanDiegoCrime;
+			productReference = 4FCA01741DE6942400D3D751 /* SanDiegoCrime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FCA01871DE6942400D3D751 /* SanDiegoCrimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FCA019F1DE6942400D3D751 /* Build configuration list for PBXNativeTarget "SanDiegoCrimeTests" */;
+			buildPhases = (
+				4FCA01841DE6942400D3D751 /* Sources */,
+				4FCA01851DE6942400D3D751 /* Frameworks */,
+				4FCA01861DE6942400D3D751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FCA018A1DE6942400D3D751 /* PBXTargetDependency */,
+			);
+			name = SanDiegoCrimeTests;
+			productName = SanDiegoCrimeTests;
+			productReference = 4FCA01881DE6942400D3D751 /* SanDiegoCrimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4FCA01921DE6942400D3D751 /* SanDiegoCrimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FCA01A21DE6942400D3D751 /* Build configuration list for PBXNativeTarget "SanDiegoCrimeUITests" */;
+			buildPhases = (
+				4FCA018F1DE6942400D3D751 /* Sources */,
+				4FCA01901DE6942400D3D751 /* Frameworks */,
+				4FCA01911DE6942400D3D751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FCA01951DE6942400D3D751 /* PBXTargetDependency */,
+			);
+			name = SanDiegoCrimeUITests;
+			productName = SanDiegoCrimeUITests;
+			productReference = 4FCA01931DE6942400D3D751 /* SanDiegoCrimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		4FEB89781E01FE9F00FEBA0F /* JBChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FEB899A1E01FEA000FEBA0F /* Build configuration list for PBXNativeTarget "JBChart" */;
+			buildPhases = (
+				4FEB89741E01FE9F00FEBA0F /* Sources */,
+				4FEB89751E01FE9F00FEBA0F /* Frameworks */,
+				4FEB89761E01FE9F00FEBA0F /* Headers */,
+				4FEB89771E01FE9F00FEBA0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JBChart;
+			productName = JBChart;
+			productReference = 4FEB89791E01FE9F00FEBA0F /* JBChart.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4FEB89801E01FE9F00FEBA0F /* JBChartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FEB899B1E01FEA000FEBA0F /* Build configuration list for PBXNativeTarget "JBChartTests" */;
+			buildPhases = (
+				4FEB897D1E01FE9F00FEBA0F /* Sources */,
+				4FEB897E1E01FE9F00FEBA0F /* Frameworks */,
+				4FEB897F1E01FE9F00FEBA0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FEB89841E01FEA000FEBA0F /* PBXTargetDependency */,
+				4FEB89861E01FEA000FEBA0F /* PBXTargetDependency */,
+			);
+			name = JBChartTests;
+			productName = JBChartTests;
+			productReference = 4FEB89811E01FE9F00FEBA0F /* JBChartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FCA016C1DE6942400D3D751 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Huangxi;
+				TargetAttributes = {
+					4FCA01731DE6942400D3D751 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = SJP6W4ERRE;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					4FCA01871DE6942400D3D751 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = SJP6W4ERRE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4FCA01731DE6942400D3D751;
+					};
+					4FCA01921DE6942400D3D751 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = SJP6W4ERRE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4FCA01731DE6942400D3D751;
+					};
+					4FEB89781E01FE9F00FEBA0F = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = SJP6W4ERRE;
+						ProvisioningStyle = Automatic;
+					};
+					4FEB89801E01FE9F00FEBA0F = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = SJP6W4ERRE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4FCA01731DE6942400D3D751;
+					};
+				};
+			};
+			buildConfigurationList = 4FCA016F1DE6942400D3D751 /* Build configuration list for PBXProject "SanDiegoCrime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FCA016B1DE6942400D3D751;
+			productRefGroup = 4FCA01751DE6942400D3D751 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4F8ACE001E072ACA00FD0DAC /* Products */;
+					ProjectRef = 4F8ACDFF1E072ACA00FD0DAC /* SQLite.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				4FCA01731DE6942400D3D751 /* SanDiegoCrime */,
+				4FCA01871DE6942400D3D751 /* SanDiegoCrimeTests */,
+				4FCA01921DE6942400D3D751 /* SanDiegoCrimeUITests */,
+				4FEB89781E01FE9F00FEBA0F /* JBChart */,
+				4FEB89801E01FE9F00FEBA0F /* JBChartTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4F8ACE0A1E072ACA00FD0DAC /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 4F8ACE091E072ACA00FD0DAC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F8ACE0C1E072ACA00FD0DAC /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = 4F8ACE0B1E072ACA00FD0DAC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F8ACE0E1E072ACA00FD0DAC /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 4F8ACE0D1E072ACA00FD0DAC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F8ACE101E072ACA00FD0DAC /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = 4F8ACE0F1E072ACA00FD0DAC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F8ACE121E072ACA00FD0DAC /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 4F8ACE111E072ACA00FD0DAC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F8ACE141E072ACA00FD0DAC /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = 4F8ACE131E072ACA00FD0DAC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F8ACE161E072ACA00FD0DAC /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 4F8ACE151E072ACA00FD0DAC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FCA01721DE6942400D3D751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FE7C3EA1E0486D00078F00B /* CrimeData.sqlite in Resources */,
+				4FCA01821DE6942400D3D751 /* LaunchScreen.storyboard in Resources */,
+				4FFC1E7B1DFF4A13007B257A /* image.xcassets in Resources */,
+				4FCA01AA1DE6958400D3D751 /* CustomCalloutView.xib in Resources */,
+				4FCA017D1DE6942400D3D751 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FCA01861DE6942400D3D751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FCA01911DE6942400D3D751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FEB89771E01FE9F00FEBA0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FEB897F1E01FE9F00FEBA0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FCA01701DE6942400D3D751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FEB89D81E02009D00FEBA0F /* LineViewController.swift in Sources */,
+				4FCA01B01DE6A01100D3D751 /* CommunityAnnotation.swift in Sources */,
+				4F8F85451DF516CC00954E89 /* CalloutRecord.swift in Sources */,
+				4FE9CFEA1E01D03900AD0B1E /* TestViewController.swift in Sources */,
+				4FCA01AC1DE6967B00D3D751 /* CustomCalloutView.swift in Sources */,
+				4FEB89D61E02009600FEBA0F /* BarViewController.swift in Sources */,
+				4FCA017A1DE6942400D3D751 /* ViewController.swift in Sources */,
+				4F8F854D1DF5174100954E89 /* RateRecord.swift in Sources */,
+				4FCA01781DE6942400D3D751 /* AppDelegate.swift in Sources */,
+				4FA82AE91DF4BA3400B9AABF /* DataBaseAccess.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FCA01841DE6942400D3D751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FCA018D1DE6942400D3D751 /* SanDiegoCrimeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FCA018F1DE6942400D3D751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FCA01981DE6942400D3D751 /* SanDiegoCrimeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FEB89741E01FE9F00FEBA0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FEB89CA1E01FEE600FEBA0F /* JBShapeLineLayer.m in Sources */,
+				4FEB89D41E01FEE600FEBA0F /* JBLineChartLinesView.m in Sources */,
+				4FEB89D01E01FEE600FEBA0F /* JBLineChartDotsView.m in Sources */,
+				4FEB89C61E01FEE600FEBA0F /* JBLineChartView.m in Sources */,
+				4FEB89CC1E01FEE600FEBA0F /* JBLineChartLine.m in Sources */,
+				4FEB89BE1E01FEE600FEBA0F /* NSMutableArray+JBStack.m in Sources */,
+				4FEB89CE1E01FEE600FEBA0F /* JBLineChartPoint.m in Sources */,
+				4FEB89C41E01FEE600FEBA0F /* JBChartView.m in Sources */,
+				4FEB89C01E01FEE600FEBA0F /* JBBarChartView.m in Sources */,
+				4FEB89C21E01FEE600FEBA0F /* JBGradientBarView.m in Sources */,
+				4FEB89D21E01FEE600FEBA0F /* JBLineChartDotView.m in Sources */,
+				4FEB89C81E01FEE600FEBA0F /* JBGradientLineLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FEB897D1E01FE9F00FEBA0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FEB89891E01FEA000FEBA0F /* JBChartTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FCA018A1DE6942400D3D751 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FCA01731DE6942400D3D751 /* SanDiegoCrime */;
+			targetProxy = 4FCA01891DE6942400D3D751 /* PBXContainerItemProxy */;
+		};
+		4FCA01951DE6942400D3D751 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FCA01731DE6942400D3D751 /* SanDiegoCrime */;
+			targetProxy = 4FCA01941DE6942400D3D751 /* PBXContainerItemProxy */;
+		};
+		4FEB89841E01FEA000FEBA0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FEB89781E01FE9F00FEBA0F /* JBChart */;
+			targetProxy = 4FEB89831E01FEA000FEBA0F /* PBXContainerItemProxy */;
+		};
+		4FEB89861E01FEA000FEBA0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FCA01731DE6942400D3D751 /* SanDiegoCrime */;
+			targetProxy = 4FEB89851E01FEA000FEBA0F /* PBXContainerItemProxy */;
+		};
+		4FEB898D1E01FEA000FEBA0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FEB89781E01FE9F00FEBA0F /* JBChart */;
+			targetProxy = 4FEB898C1E01FEA000FEBA0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4FCA017B1DE6942400D3D751 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FCA017C1DE6942400D3D751 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4FCA01801DE6942400D3D751 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FCA01811DE6942400D3D751 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FCA019A1DE6942400D3D751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4FCA019B1DE6942400D3D751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FCA019D1DE6942400D3D751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = SJP6W4ERRE;
+				INFOPLIST_FILE = SanDiegoCrime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xi.SanDiegoCrime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4FCA019E1DE6942400D3D751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = SJP6W4ERRE;
+				INFOPLIST_FILE = SanDiegoCrime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xi.SanDiegoCrime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4FCA01A01DE6942400D3D751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SJP6W4ERRE;
+				INFOPLIST_FILE = SanDiegoCrimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xi.SanDiegoCrimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanDiegoCrime.app/SanDiegoCrime";
+			};
+			name = Debug;
+		};
+		4FCA01A11DE6942400D3D751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SJP6W4ERRE;
+				INFOPLIST_FILE = SanDiegoCrimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xi.SanDiegoCrimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanDiegoCrime.app/SanDiegoCrime";
+			};
+			name = Release;
+		};
+		4FCA01A31DE6942400D3D751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = SJP6W4ERRE;
+				INFOPLIST_FILE = SanDiegoCrimeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xi.SanDiegoCrimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SanDiegoCrime;
+			};
+			name = Debug;
+		};
+		4FCA01A41DE6942400D3D751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = SJP6W4ERRE;
+				INFOPLIST_FILE = SanDiegoCrimeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xi.SanDiegoCrimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SanDiegoCrime;
+			};
+			name = Release;
+		};
+		4FEB89901E01FEA000FEBA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SJP6W4ERRE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JBChart/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jawbone.JBChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4FEB89911E01FEA000FEBA0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SJP6W4ERRE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JBChart/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jawbone.JBChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4FEB89921E01FEA000FEBA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = SJP6W4ERRE;
+				INFOPLIST_FILE = JBChartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jawbone.JBChartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanDiegoCrime.app/SanDiegoCrime";
+			};
+			name = Debug;
+		};
+		4FEB89931E01FEA000FEBA0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = SJP6W4ERRE;
+				INFOPLIST_FILE = JBChartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jawbone.JBChartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanDiegoCrime.app/SanDiegoCrime";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FCA016F1DE6942400D3D751 /* Build configuration list for PBXProject "SanDiegoCrime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FCA019A1DE6942400D3D751 /* Debug */,
+				4FCA019B1DE6942400D3D751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FCA019C1DE6942400D3D751 /* Build configuration list for PBXNativeTarget "SanDiegoCrime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FCA019D1DE6942400D3D751 /* Debug */,
+				4FCA019E1DE6942400D3D751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FCA019F1DE6942400D3D751 /* Build configuration list for PBXNativeTarget "SanDiegoCrimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FCA01A01DE6942400D3D751 /* Debug */,
+				4FCA01A11DE6942400D3D751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FCA01A21DE6942400D3D751 /* Build configuration list for PBXNativeTarget "SanDiegoCrimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FCA01A31DE6942400D3D751 /* Debug */,
+				4FCA01A41DE6942400D3D751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FEB899A1E01FEA000FEBA0F /* Build configuration list for PBXNativeTarget "JBChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FEB89901E01FEA000FEBA0F /* Debug */,
+				4FEB89911E01FEA000FEBA0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FEB899B1E01FEA000FEBA0F /* Build configuration list for PBXNativeTarget "JBChartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FEB89921E01FEA000FEBA0F /* Debug */,
+				4FEB89931E01FEA000FEBA0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FCA016C1DE6942400D3D751 /* Project object */;
+}
