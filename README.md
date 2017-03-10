@@ -12,7 +12,6 @@ Technique: (1) SQL Database : Third Party Library https://github.com/stephenceli
            (2) JBChart
            (3) Map, Location Service.
 
-![screen shot 2017-03-10 at 12 09 14 pm](https://cloud.githubusercontent.com/assets/15055996/23811571/77cbb416-058b-11e7-9529-a24780d28257.png)
 ![screen shot 2017-03-10 at 12 10 01 pm](https://cloud.githubusercontent.com/assets/15055996/23811572/77cebc10-058b-11e7-9040-fac31dc5f551.png)
 ![screen shot 2017-03-10 at 12 10 17 pm](https://cloud.githubusercontent.com/assets/15055996/23811574/77d1545c-058b-11e7-8765-556b24aaccea.png)
 ![screen shot 2017-03-10 at 12 10 32 pm](https://cloud.githubusercontent.com/assets/15055996/23811573/77d07e42-058b-11e7-9b81-98fa5d6605d9.png)
